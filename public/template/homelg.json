@@ -146,7 +146,6 @@
       },
       "type": "header"
     },
-
     "children": {
       "sections": [
         {
@@ -196,7 +195,6 @@
             }
           }
         },
-
         {
           "type": "SpecialOffer",
           "blocks": {
@@ -257,7 +255,7 @@
               }
             ],
             "setting": {
-              "storyRingColor": "#ef394e",
+              "storyRingColor": "#1447e1",
               "viewedRingColor": "#e0e0e0",
               "titleColor": "#666666",
               "titleFontSize": "12",
@@ -363,7 +361,6 @@
           "type": "ProductsRow",
           "blocks": {
             "textHeading": " محصولات جدید ",
-
             "setting": {
               "selectedCollection": "67b1a19b5e69469d919476f4",
               "headingColor": "#000000",
@@ -461,7 +458,6 @@
       ],
       "order": [
         "Story",
-
         "SlideBanner",
         "SpecialOffer",
         "OfferRow",
@@ -482,7 +478,7 @@
           "descriptionColor": "#000000",
           "descriptionFontSize": "18",
           "descriptionFontWeight": "normal",
-          "trustIconBackground": "#e4e4e4",
+          "trustIconBackground": "#1a54db",
           "trustIconColor": "#ffffff",
           "trustItemSize": "15",
           "trustItemColor": "bold",
@@ -521,9 +517,13 @@
         "marginBottom": "20",
         "paddinRight": "0",
         "paddinLeft": "0",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffad8a"
       }
     }
   },
-  "order": ["section-header", "children", "section-footer"]
+  "order": [
+    "section-header",
+    "children",
+    "section-footer"
+  ]
 }
