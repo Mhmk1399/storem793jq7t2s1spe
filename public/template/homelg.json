@@ -258,7 +258,7 @@
               "storyRingColor": "#1447e1",
               "viewedRingColor": "#e0e0e0",
               "titleColor": "#666666",
-              "titleFontSize": "12",
+              "titleFontSize": "19",
               "titleFontWeight": "normal",
               "imageWidth": "70px",
               "imageHeight": "70px",
@@ -286,7 +286,7 @@
               "gradientToColor": "#e5e7eb",
               "buttonText": "مشاهده همه",
               "buttonLink": "/special-offers",
-              "selectedCollection": "67b1a19b5e69469d919476f4"
+              "selectedCollection": "67b341e8193d4de634d00fec"
             }
           },
           "setting": {
