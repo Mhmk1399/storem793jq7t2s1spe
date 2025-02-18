@@ -1,9 +1,9 @@
 {
   "children": {
     "type": "about",
-     "metaData":{
-      "title":"juju",
-      "description":"juju page"
+    "metaData": {
+      "title": "juju",
+      "description": "juju page"
     },
     "sections": [
       {
@@ -12,7 +12,6 @@
           "heading": "عضویت در خبرنامه",
           "description": "توضیحات درباره خبرنامه",
           "btnText": "ثبت نام",
-
           "setting": {
             "headingColor": "#ffffff",
             "headingFontSize": "27",
@@ -157,7 +156,6 @@
       {
         "type": "MultiRow",
         "title": "سربرگ ردیف ها",
-
         "blocks": [
           {
             "heading": "ردیف اول",
@@ -211,6 +209,11 @@
         }
       }
     ],
-    "order": ["NewsLetter", "MultiRow", "MultiColumn", "CollapseFaq"]
+    "order": [
+      "NewsLetter",
+      "MultiRow",
+      "MultiColumn",
+      "CollapseFaq"
+    ]
   }
 }
