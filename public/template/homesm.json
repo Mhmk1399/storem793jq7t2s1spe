@@ -129,7 +129,7 @@
           "bgColor": "#ffffff",
           "gap": "10",
           "megaMenuBg": "#ffffff",
-          "categoryItemColor":"ffffff",
+          "categoryItemColor": "ffffff",
           "categoryItemSize": "14",
           "categoryItemHoverColor": "#000000"
         }
@@ -146,12 +146,11 @@
       },
       "type": "header"
     },
-
     "children": {
-       "metaData":{
-      "title":"juju",
-      "description":"juju page"
-    },
+      "metaData": {
+        "title": "juju",
+        "description": "juju page"
+      },
       "sections": [
         {
           "type": "SlideBanner",
@@ -200,8 +199,6 @@
             }
           }
         },
-   
-       
         {
           "type": "SpecialOffer",
           "blocks": {
@@ -219,7 +216,7 @@
               "cardBorderRadius": "8",
               "imageRadius": "8",
               "gridColumns": "4",
-              "selectedCollection":"67b1a1455e69469d91947679"
+              "selectedCollection": "67b1a1455e69469d91947679"
             }
           },
           "setting": {
@@ -368,7 +365,6 @@
           "type": "ProductsRow",
           "blocks": {
             "textHeading": " محصولات جدید ",
-
             "setting": {
               "selectedCollection": "67b1a19b5e69469d919476f4",
               "headingColor": "#000000",
@@ -466,8 +462,6 @@
       ],
       "order": [
         "Story",
-       
-     
         "SlideBanner",
         "SpecialOffer",
         "OfferRow",
@@ -531,5 +525,9 @@
       }
     }
   },
-  "order": ["section-header", "children", "section-footer"]
+  "order": [
+    "section-header",
+    "children",
+    "section-footer"
+  ]
 }
