@@ -175,12 +175,33 @@ const NavItem = styled(Link)<{
     props.$data.blocks.setting?.itemFontWeight || "normal"};
   cursor: pointer;
   text-align: right;
+  position: relative;
+  padding: 4px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: ${(props) =>
+      props.$data.blocks.setting?.itemHoverColor || "#FCA311"};
+    transition: width 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+    border-radius: 2px;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
 
   &:hover {
     color: ${(props) =>
       props.$data.blocks.setting?.itemHoverColor || "#FCA311"};
   }
 `;
+
 const MegaMenu = styled.div<{ isVisible?: boolean; $data: HeaderSection }>`
   position: absolute;
   top: 100%;
