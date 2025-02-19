@@ -30,7 +30,6 @@ const HeaderWrapper = styled.header<{
 }>`
   width: 100%;
   border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   position: relative;
   margin-top: ${(props) => props.$data.setting?.marginTop || "0"}px;
   margin-bottom: ${(props) => props.$data?.setting?.marginBottom || "0"}px;
@@ -50,10 +49,34 @@ const AnnouncementBar = styled.div<{
     props.$data.blocks?.setting?.announcementBgColor || "#f1b80c"};
   color: ${(props) =>
     props.$data.blocks?.setting?.announcementTextColor || "#ffffff"};
-  padding: 17px 16px;
+  padding: 6px 16px;
   text-align: center;
   font-size: ${(props) =>
     props.$data.blocks.setting?.announcementFontSize || "14"}px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+
+  /* Marquee animation */
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    padding-left: 100%;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Hover pause effect */
+  &:hover .marquee-content {
+    animation-play-state: paused;
+  }
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -101,7 +124,7 @@ const SearchContainer = styled.div`
   // flex: 1;
   @media (min-width: 768px) {
     margin-right: 1rem;
-    // margin-left: 500px;
+    margin-left: 150px;
   }
 `;
 
@@ -447,12 +470,17 @@ const Header = () => {
 
   return (
     <HeaderWrapper $data={sectionData}>
-      <AnnouncementBar $data={sectionData}>
-        {sectionData.blocks.setting?.announcementText}
+      <AnnouncementBar
+        className="border-b border-[#e5e7eb]"
+        $data={sectionData}
+      >
+        <div className="marquee-content">
+          {sectionData.blocks.setting?.announcementText}
+        </div>
       </AnnouncementBar>
 
       <MainSection>
-        <div className="flex flex-row-reverse items-center gap-6 justify-between w-full">
+        <div className="flex flex-row-reverse items-center  justify-between w-full">
           <LogoContainer>
             <Logo
               $data={sectionData}
@@ -477,12 +505,13 @@ const Header = () => {
         </div>
 
         <ActionButtons>
-          <div className="flex items-center gap-2">
+          <div className="flex  items-center gap-2">
             <ShoppingCart
               className="text-gray-400 cursor-pointer hover:text-black"
               size={24}
               onClick={handleNavigate}
             />
+            |
             <LoginButton href="/login">
               <User size={18} /> ورود | ثبت‌نام
             </LoginButton>

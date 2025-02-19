@@ -105,7 +105,7 @@ export const SpecialOffer: React.FC<SpecialOfferProps> = ({ sections, isMobile, 
           method: "GET", 
           headers: {
             "Content-Type": "application/json",
-            collectionId: CollectionId||""  // Remove extra quotes
+            CollectionId: CollectionId||""  // Remove extra quotes
           }
         });
         

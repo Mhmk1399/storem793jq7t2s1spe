@@ -5,14 +5,18 @@ import collections from "@/models/collection";
 export async function GET(req: NextRequest) {
   await connect();
   const collectionId = req.headers.get("CollectionId");
+  console.log("CollectionId:", collectionId);
 
   try {
     const collection = await collections.findById(collectionId);
-    
+
     if (!collection) {
-      return NextResponse.json({ error: "Collection not found" }, { status: 404 });
+      return NextResponse.json(
+        { error: "Collection not found" },
+        { status: 404 }
+      );
     }
-    
+
     return NextResponse.json(collection, { status: 200 });
   } catch (error) {
     console.log("Detailed error:", error);

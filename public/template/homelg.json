@@ -123,7 +123,7 @@
           "locationButtonBgColor": "#FFF7ED",
           "locationButtonTextColor": "#EA580C",
           "announcementText": "ارسال رایگان برای خرید‌ بالای ۵۰۰ هزار تومان!",
-          "announcementBgColor": "#f1b80c",
+          "announcementBgColor": "#e51542",
           "announcementTextColor": "#ffffff",
           "announcementFontSize": "14",
           "bgColor": "#ffffff",
@@ -142,15 +142,11 @@
         "marginTop": "",
         "marginBottom": "0",
         "navbarPosition": "fixed",
-        "bgColor": "#d7163c"
+        "bgColor": "#ffffff"
       },
       "type": "header"
     },
     "children": {
-      "metaData": {
-        "title": "juju",
-        "description": "juju page"
-      },
       "sections": [
         {
           "type": "SlideBanner",
@@ -216,7 +212,7 @@
               "cardBorderRadius": "8",
               "imageRadius": "8",
               "gridColumns": "4",
-              "selectedCollection": "67b341e8193d4de634d00fec"
+              "selectedCollection": "679e0724216fde7c1cdc1d99"
             }
           },
           "setting": {
@@ -259,10 +255,10 @@
               }
             ],
             "setting": {
-              "storyRingColor": "#1447e1",
+              "storyRingColor": "#fd0de9",
               "viewedRingColor": "#e0e0e0",
               "titleColor": "#666666",
-              "titleFontSize": "19",
+              "titleFontSize": "12",
               "titleFontWeight": "normal",
               "imageWidth": "70px",
               "imageHeight": "70px",
@@ -282,15 +278,15 @@
           "blocks": {
             "offers": [],
             "setting": {
-              "titleColor": "#22C55E",
+              "titleColor": "#0c2c18",
               "titleText": "شگفت‌انگیز سوپرمارکتی",
-              "buttonColor": "#ffffff",
+              "buttonColor": "#d91717",
               "buttonTextColor": "#000000",
               "gradientFromColor": "#f3f4f6",
               "gradientToColor": "#e5e7eb",
               "buttonText": "مشاهده همه",
               "buttonLink": "/special-offers",
-              "selectedCollection": "67b341e8193d4de634d00fec"
+              "selectedCollection": "67b1e6d4d73e3321d2a178a6"
             }
           },
           "setting": {
@@ -366,7 +362,7 @@
           "blocks": {
             "textHeading": " محصولات جدید ",
             "setting": {
-              "selectedCollection": "67b341e8193d4de634d00fec",
+              "selectedCollection": "679e070c216fde7c1cdc1d94",
               "headingColor": "#000000",
               "headingFontSize": "22",
               "headingFontWeight": "bold",
@@ -393,7 +389,7 @@
           "blocks": {
             "textHeading": " محصولات پرفروش ",
             "setting": {
-              "selectedCollection": "67b341e8193d4de634d00fec",
+              "selectedCollection": "679e070c216fde7c1cdc1d94",
               "headingColor": "#000000",
               "headingFontSize": "22",
               "headingFontWeight": "bold",
@@ -482,12 +478,12 @@
           "descriptionColor": "#000000",
           "descriptionFontSize": "18",
           "descriptionFontWeight": "normal",
-          "trustIconBackground": "#1a54db",
+          "trustIconBackground": "#e4e4e4",
           "trustIconColor": "#ffffff",
           "trustItemSize": "15",
           "trustItemColor": "bold",
-          "scrollButtonBg": "#e4e4e4",
-          "scrollButtonColor": "#000000",
+          "scrollButtonBg": "#8684f1",
+          "scrollButtonColor": "#fffafa",
           "categoryColor": "#000000",
           "linkColor": "#0077b6",
           "logoWidth": "80",
@@ -503,16 +499,7 @@
         "textNumber": "با این شماره تماس بگیرید",
         "phoneNumber": "09123456789",
         "logo": "/assets/images/logo.webp",
-        "links": [
-          {
-            "url": "/privacy-policy",
-            "label": "Privacy Policy"
-          },
-          {
-            "url": "/terms-of-service",
-            "label": "Terms of Service"
-          }
-        ]
+        "links": []
       },
       "setting": {
         "paddingTop": "30",
@@ -521,7 +508,7 @@
         "marginBottom": "20",
         "paddinRight": "0",
         "paddinLeft": "0",
-        "backgroundColor": "#ffad8a"
+        "backgroundColor": "#e30d0d"
       }
     }
   },
