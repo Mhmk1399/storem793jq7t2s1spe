@@ -83,28 +83,28 @@
             ]
           },
           {
-            "name": "شگفت‌انگیزها",
-            "url": "/offers"
+            "name": "درباره ما",
+            "url": "/about"
           },
           {
-            "name": "سوپرمارکت",
-            "url": "/supermarket"
+            "name": "وبلاگ",
+            "url": "/blog"
           },
           {
-            "name": "پرفروش‌ترین‌ها",
-            "url": "/best-sellers"
+            "name": "تماس با ما",
+            "url": "/contact"
           },
           {
-            "name": "تخفیف‌ها و پیشنهادها",
+            "name": "تخفیف‌ها",
             "url": "/discounts"
           },
           {
-            "name": "سوالی دارید؟",
+            "name": "سوالات متداول",
             "url": "/faq"
           },
           {
-            "name": "فروشنده شوید",
-            "url": "/become-seller"
+            "name": "تبلیغات",
+            "url": "/ads"
           }
         ],
         "setting": {
@@ -286,7 +286,7 @@
               "gradientToColor": "#e5e7eb",
               "buttonText": "مشاهده همه",
               "buttonLink": "/special-offers",
-              "selectedCollection": "67b1e6d4d73e3321d2a178a6"
+              "selectedCollection": "67b341e8193d4de634d00fec"
             }
           },
           "setting": {
@@ -335,8 +335,8 @@
               }
             ],
             "setting": {
-              "headingColor": "#14213D",
-              "headingFontSize": "32",
+              "headingColor": "#1052e0",
+              "headingFontSize": "70",
               "headingFontWeight": "bold",
               "brandNameColor": "#666666",
               "brandNameFontSize": "16",
@@ -362,7 +362,7 @@
           "blocks": {
             "textHeading": " محصولات جدید ",
             "setting": {
-              "selectedCollection": "679e070c216fde7c1cdc1d94",
+              "selectedCollection": "67b341e8193d4de634d00fec",
               "headingColor": "#000000",
               "headingFontSize": "22",
               "headingFontWeight": "bold",
@@ -389,7 +389,7 @@
           "blocks": {
             "textHeading": " محصولات پرفروش ",
             "setting": {
-              "selectedCollection": "679e070c216fde7c1cdc1d94",
+              "selectedCollection": "67b341e8193d4de634d00fec",
               "headingColor": "#000000",
               "headingFontSize": "22",
               "headingFontWeight": "bold",
@@ -464,8 +464,8 @@
         "ProductsRow-2",
         "Gallery",
         "Brands",
-        "ProductsRow",
-        "Gallery-2"
+        "Gallery-2",
+        "ProductsRow"
       ]
     },
     "sectionFooter": {
@@ -512,9 +512,5 @@
       }
     }
   },
-  "order": [
-    "section-header",
-    "children",
-    "section-footer"
-  ]
+  "order": ["section-header", "children", "section-footer"]
 }

@@ -83,28 +83,28 @@
             ]
           },
           {
-            "name": "شگفت‌انگیزها",
-            "url": "/offers"
+            "name": "درباره ما",
+            "url": "/about"
           },
           {
-            "name": "سوپرمارکت",
-            "url": "/supermarket"
+            "name": "وبلاگ",
+            "url": "/blog"
           },
           {
-            "name": "پرفروش‌ترین‌ها",
-            "url": "/best-sellers"
+            "name": "تماس با ما",
+            "url": "/contact"
           },
           {
-            "name": "تخفیف‌ها و پیشنهادها",
+            "name": "تخفیف‌ها",
             "url": "/discounts"
           },
           {
-            "name": "سوالی دارید؟",
+            "name": "سوالات متداول",
             "url": "/faq"
           },
           {
-            "name": "فروشنده شوید",
-            "url": "/become-seller"
+            "name": "تبلیغات",
+            "url": "/ads"
           }
         ],
         "setting": {
@@ -512,9 +512,5 @@
       }
     }
   },
-  "order": [
-    "section-header",
-    "children",
-    "section-footer"
-  ]
+  "order": ["section-header", "children", "section-footer"]
 }
