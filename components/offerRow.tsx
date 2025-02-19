@@ -162,7 +162,7 @@ export const OfferRow: React.FC<OfferRowProps> = ({
         </div>
         <button
           className="rounded-full px-4 py-2 my-4 text-lg mr-auto font-semibold hidden lg:flex flex-row-reverse gap-x-2 items-center"
-          name="offer-button"
+          aria-label="offer-button"
           style={{
             background: sectionData.blocks.setting?.buttonColor || "#ffffff",
             color: sectionData.blocks.setting?.buttonTextColor || "#000000",

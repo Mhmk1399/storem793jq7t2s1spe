@@ -159,13 +159,17 @@ const SlideBanner: React.FC<SlideBannerProps> = ({
 
       <NavigationButtons>
         <NavButton
-          name="previous button"
+          aria-label="previous button"
           onClick={prevSlide}
           $data={sectionData}
         >
           <BsChevronRight size={20} />
         </NavButton>
-        <NavButton name="next button" onClick={nextSlide} $data={sectionData}>
+        <NavButton
+          aria-label="next button"
+          onClick={nextSlide}
+          $data={sectionData}
+        >
           <BsChevronLeft size={20} />
         </NavButton>
       </NavigationButtons>
@@ -174,7 +178,7 @@ const SlideBanner: React.FC<SlideBannerProps> = ({
         {sectionData.blocks.slides.map((_, index) => (
           <Dot
             $data={sectionData}
-            name="dot"
+            aria-label="dot"
             key={index}
             $active={currentSlide === index}
             onClick={() => setCurrentSlide(index)}

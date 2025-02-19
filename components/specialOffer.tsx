@@ -212,7 +212,7 @@ export const SpecialOffer: React.FC<SpecialOfferProps> = ({
         className="left bg-white"
         onClick={() => handleScroll("left")}
         $data={sectionData}
-        name="left"
+        aria-label="left"
       >
         <svg width="24" height="24" viewBox="0 0 24 24">
           <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
@@ -220,7 +220,7 @@ export const SpecialOffer: React.FC<SpecialOfferProps> = ({
       </ScrollButton>
 
       <ScrollButton
-        name="right"
+        aria-label="right"
         className="right bg-white"
         onClick={() => handleScroll("right")}
         $data={sectionData}

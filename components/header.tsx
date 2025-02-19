@@ -543,7 +543,7 @@ const Header = () => {
               <svg
                 width="24"
                 height="24"
-                name="close"
+                aria-label="close"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -555,7 +555,7 @@ const Header = () => {
             ) : (
               <svg
                 width="24"
-                name="menu"
+                aria-label="menu"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
