@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Data from "../public/template/homelg.json";
 
 import {
   BannerSection,
@@ -33,7 +34,7 @@ import Video from "@/components/video";
 import { Collection } from "@/components/collection";
 import RichText from "@/components/richText";
 import ProductList from "@/components/productList";
-// import { SpecialOffer } from "@/components/specialOffer";
+import { SpecialOffer } from "@/components/specialOffer";
 import { Story } from "@/components/story";
 import { OfferRow } from "@/components/offerRow";
 import Gallery from "@/components/gallery";
@@ -67,6 +68,17 @@ export default function Page() {
   const [isMobile, setIsMobile] = useState(false);
   const [orders, setOrders] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    document.title = Data.sections.children.metaData.title;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        Data.sections.children.metaData.description
+      );
+    }
+  }, []);
   useEffect(() => {
     const fetchToken = async () => {
       const response = await fetch(`/api/generateToken`);
@@ -89,7 +101,7 @@ export default function Page() {
     MultiRow,
     ProductList,
     Collection,
-    // SpecialOffer,
+    SpecialOffer,
     Story,
     OfferRow,
     Gallery,
@@ -114,14 +126,16 @@ export default function Page() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  if(isLoading) {
-    return <div className="flex justify-center items-center h-screen">
-<div className="flex flex-row gap-2">
-  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
-  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
-  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
-</div>
-    </div>;
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-row gap-2">
+          <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
+          <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
+          <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
+        </div>
+      </div>
+    );
   }
   return (
     <div className="grid grid-cols-1 pt-4 px-1">

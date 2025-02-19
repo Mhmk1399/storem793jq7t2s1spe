@@ -1,47 +1,11 @@
 {
   "children": {
     "type": "contact",
-     "metaData":{
-      "title":"juju",
-      "description":"juju page"
+    "metaData": {
+      "title": "juju",
+      "description": "juju page"
     },
     "sections": [
-      {
-        "type": "ImageText",
-        "blocks": {
-          "imageSrc": "/assets/images/banner3.jpg",
-          "imageAlt": "",
-          "heading": "سربرگ محصول",
-          "description": "توضیحات درباره محصول",
-          "btnLink": "/",
-          "btnText": "دکمه",
-          "setting": {
-            "headingColor": "#ffffff",
-            "headingFontSize": "24",
-            "headingFontWeight": "bold",
-            "descriptionColor": "#000000",
-            "descriptionFontSize": "16",
-            "descriptionFontWeight": "normal",
-            "btnTextColor": "#000000",
-            "btnBackgroundColor": "#ffffff",
-            "backgroundColorBox": "#1d6bdf",
-            "backgroundBoxOpacity": 0.9,
-            "boxRadiuos": "20",
-            "opacityImage": 1,
-            "imageWidth": "85",
-            "imageHeight": "50",
-            "background": "#ffffff"
-          }
-        },
-        "setting": {
-          "paddingTop": "30",
-          "paddingBottom": "30",
-          "marginTop": "20",
-          "marginBottom": "20",
-          "paddinRight": "0",
-          "paddinLeft": "0"
-        }
-      },
       {
         "type": "Banner",
         "blocks": {
@@ -122,6 +86,6 @@
         }
       }
     ],
-    "order": ["ImageText", "ContactForm", "NewsLetter", "Banner"]
+    "order": ["ContactForm", "NewsLetter", "Banner"]
   }
 }
