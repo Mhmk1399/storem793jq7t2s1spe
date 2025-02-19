@@ -175,6 +175,7 @@ export const OfferRow: React.FC<OfferRowProps> = ({
             height="24px"
             viewBox="0 -960 960 960"
             width="24px"
+            aria-label="offer-button"
           >
             <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
           </svg>
