@@ -30,14 +30,14 @@ const Card = styled.div<{
 }>`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border-radius: ${(props) =>
     props.$setting?.cardBorderRadius || defaultSetting.cardBorderRadius};
   background: ${(props) =>
     props.$setting?.cardBackground || defaultSetting.cardBackground};
-  margin: 10px;
+  // margin: 10px;
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: 400px;
   width: 320px;
   min-height: 400px;
@@ -73,7 +73,6 @@ const ProductName = styled.h3<{
     props.$settings?.nameFontWeight || defaultSetting.nameFontWeight};
   color: ${(props) => props.$settings?.nameColor || defaultSetting.nameColor};
   margin: 8px 0;
-  text-align: center;
 `;
 
 const ProductDescription = styled.p<{
@@ -88,7 +87,7 @@ const ProductDescription = styled.p<{
     props.$settings?.descriptionFontWeight ||
     defaultSetting.descriptionFontWeight};
   text-align: center;
-  margin: 8px 0;
+  margin: 15px 0 36px 0;
 `;
 
 const ProductPrice = styled.span<{
@@ -115,7 +114,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ productData }) => {
   };
   const [currentImageIndex] = useState(0);
 
-  const handleNavigate = (id : string) => {
+  const handleNavigate = (id: string) => {
     router.push(`/store/${id}`);
   };
 
@@ -137,17 +136,19 @@ const ProductCard: React.FC<ProductCardProps> = ({ productData }) => {
         width={4000}
         height={4000}
       />
-      <ProductName $productData={safeProductData}>
-        {safeProductData.name || "Unnamed Product"}
-      </ProductName>
-      <ProductDescription $productData={safeProductData}>
-        {safeProductData.description || "No description available"}
-      </ProductDescription>
-      <ProductPrice $productData={safeProductData}>
-        {safeProductData.price !== undefined
-          ? safeProductData.price
-          : "Price not available"}
-      </ProductPrice>
+      <div className="flex flex-col justify-center relative ">
+        <ProductName className="text-right" $productData={safeProductData}>
+          {safeProductData.name || "Unnamed Product"}
+        </ProductName>
+        <ProductDescription $productData={safeProductData}>
+          {safeProductData.description || "No description available"}
+        </ProductDescription>
+        <ProductPrice className="absolute top-36 right-56" $productData={safeProductData}>
+          {safeProductData.price !== undefined
+            ? safeProductData.price
+            : "Price not available"}
+        </ProductPrice>
+      </div>
     </Card>
   );
 };
