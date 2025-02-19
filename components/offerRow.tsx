@@ -85,11 +85,11 @@ export const OfferRow: React.FC<OfferRowProps> = ({
     const fetchOffers = async () => {
       try {
         const response = await fetch("/api/collection", {
-          method: "GET", 
+          method: "GET",
           headers: {
             "Content-Type": "application/json",
-            CollectionId: CollectionId||"" // Remove extra quotes
-          }
+            CollectionId: CollectionId || "", // Remove extra quotes
+          },
         });
         const data = await response.json();
         if (data.products) {
@@ -162,6 +162,7 @@ export const OfferRow: React.FC<OfferRowProps> = ({
         </div>
         <button
           className="rounded-full px-4 py-2 my-4 text-lg mr-auto font-semibold hidden lg:flex flex-row-reverse gap-x-2 items-center"
+          name="offer-button"
           style={{
             background: sectionData.blocks.setting?.buttonColor || "#ffffff",
             color: sectionData.blocks.setting?.buttonTextColor || "#000000",
