@@ -286,7 +286,7 @@
               "gradientToColor": "#e5e7eb",
               "buttonText": "مشاهده همه",
               "buttonLink": "/special-offers",
-              "selectedCollection": "67b1e6d4d73e3321d2a178a6"
+              "selectedCollection": "67b341e8193d4de634d00fec"
             }
           },
           "setting": {
@@ -335,8 +335,8 @@
               }
             ],
             "setting": {
-              "headingColor": "#14213D",
-              "headingFontSize": "32",
+              "headingColor": "#1052e0",
+              "headingFontSize": "70",
               "headingFontWeight": "bold",
               "brandNameColor": "#666666",
               "brandNameFontSize": "16",
