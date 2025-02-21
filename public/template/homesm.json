@@ -255,7 +255,7 @@
               }
             ],
             "setting": {
-              "storyRingColor": "#fd0de9",
+              "storyRingColor": "#c8a04c",
               "viewedRingColor": "#e0e0e0",
               "titleColor": "#666666",
               "titleFontSize": "12",
@@ -512,5 +512,9 @@
       }
     }
   },
-  "order": ["section-header", "children", "section-footer"]
+  "order": [
+    "section-header",
+    "children",
+    "section-footer"
+  ]
 }
