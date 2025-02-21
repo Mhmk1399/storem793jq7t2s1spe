@@ -512,9 +512,13 @@
         "marginBottom": "20",
         "paddinRight": "0",
         "paddinLeft": "0",
-        "backgroundColor": "#e30d0d"
+        "backgroundColor": "#e6e6e6"
       }
     }
   },
-  "order": ["section-header", "children", "section-footer"]
+  "order": [
+    "section-header",
+    "children",
+    "section-footer"
+  ]
 }
