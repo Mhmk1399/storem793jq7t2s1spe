@@ -278,15 +278,15 @@
           "blocks": {
             "offers": [],
             "setting": {
-              "titleColor": "#0c2c18",
+              "titleColor": "#00ffff",
               "titleText": "شگفت‌انگیز سوپرمارکتی",
-              "buttonColor": "#d91717",
+              "buttonColor": "#ffffff",
               "buttonTextColor": "#000000",
               "gradientFromColor": "#f3f4f6",
               "gradientToColor": "#e5e7eb",
               "buttonText": "مشاهده همه",
               "buttonLink": "/special-offers",
-              "selectedCollection": "67b341e8193d4de634d00fec"
+              "selectedCollection": "67b1a19b5e69469d919476f4"
             }
           },
           "setting": {
